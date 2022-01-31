@@ -1,0 +1,1119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.3 (Python 3.9.10 on win32)" generated="20220131 10:00:05.717" rpa="false" schemaversion="2">
+<suite id="s1" name="Suite" source="C:\Users\jaime\OneDrive\Área de Trabalho\RobotFramework\Testes\suite.robot">
+<test id="s1-t1" name="Cenário 01: Cadastrando novo usuário Web Tables">
+<kw name="Dado que usuário abre o site" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 10:00:10.039" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/webtables'.</msg>
+<status status="PASS" starttime="20220131 10:00:10.038" endtime="20220131 10:00:20.060"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220131 10:00:20.078" level="INFO">Page title is 'ToolsQA'.</msg>
+<status status="PASS" starttime="20220131 10:00:20.060" endtime="20220131 10:00:20.078"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:10.035" endtime="20220131 10:00:20.079"/>
+</kw>
+<kw name="E maximiza a tela" library="resource">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 10:00:20.083" endtime="20220131 10:00:20.375"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:20.081" endtime="20220131 10:00:20.376"/>
+</kw>
+<kw name="Quando clica no botão Add" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:20.381" level="INFO">Clicking element 'addNewRecordButton'.</msg>
+<status status="PASS" starttime="20220131 10:00:20.379" endtime="20220131 10:00:21.251"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:20.378" endtime="20220131 10:00:21.252"/>
+</kw>
+<kw name="E preenche os dados" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>Jaime</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:21.260" level="INFO">Typing text 'Jaime' into text field '//*[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:21.259" endtime="20220131 10:00:21.730"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>Junior</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:21.732" level="INFO">Typing text 'Junior' into text field '//*[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:21.731" endtime="20220131 10:00:22.150"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>fuialiejavolto@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:22.152" level="INFO">Typing text 'fuialiejavolto@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:22.151" endtime="20220131 10:00:22.766"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>80</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:22.768" level="INFO">Typing text '80' into text field '//*[@id="age"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:22.766" endtime="20220131 10:00:23.047"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>12000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:23.048" level="INFO">Typing text '12000' into text field '//*[@id="salary"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:23.047" endtime="20220131 10:00:23.441"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${department}</arg>
+<arg>TI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:23.443" level="INFO">Typing text 'TI' into text field '//*[@id="department"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:23.442" endtime="20220131 10:00:23.755"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:21.257" endtime="20220131 10:00:23.758"/>
+</kw>
+<kw name="Então clica no botão submit" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:23.765" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:23.763" endtime="20220131 10:00:24.012"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${imagemQA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:00:24.013" endtime="20220131 10:00:24.123"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:23.762" endtime="20220131 10:00:24.124"/>
+</kw>
+<kw name="E verifica se consta o nome cadastrado" library="resource">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Jaime</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:00:24.245" level="INFO">Current page contains text 'Jaime'.</msg>
+<status status="PASS" starttime="20220131 10:00:24.131" endtime="20220131 10:00:24.246"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:24.127" endtime="20220131 10:00:24.248"/>
+</kw>
+<kw name="E fecha o navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 10:00:24.253" endtime="20220131 10:00:27.293"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:24.250" endtime="20220131 10:00:27.293"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:10.031" endtime="20220131 10:00:27.296"/>
+</test>
+<test id="s1-t2" name="Cenário 02: Alterando o cadastro de um usuário">
+<kw name="Dado que usuário abre o site" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 10:00:27.306" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/webtables'.</msg>
+<status status="PASS" starttime="20220131 10:00:27.304" endtime="20220131 10:00:36.494"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220131 10:00:36.513" level="INFO">Page title is 'ToolsQA'.</msg>
+<status status="PASS" starttime="20220131 10:00:36.494" endtime="20220131 10:00:36.514"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:27.303" endtime="20220131 10:00:36.514"/>
+</kw>
+<kw name="E maximiza a tela" library="resource">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 10:00:36.517" endtime="20220131 10:00:36.851"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:36.516" endtime="20220131 10:00:36.852"/>
+</kw>
+<kw name="Quando clica em edit no primeiro nome" library="resource">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${botao_edit}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:00:36.856" endtime="20220131 10:00:37.047"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_edit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:37.049" level="INFO">Clicking element 'class=mr-2'.</msg>
+<status status="PASS" starttime="20220131 10:00:37.048" endtime="20220131 10:00:37.746"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${RF}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:00:37.826" level="INFO">Current page contains text 'Registration Form'.</msg>
+<status status="PASS" starttime="20220131 10:00:37.746" endtime="20220131 10:00:37.826"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:36.854" endtime="20220131 10:00:37.827"/>
+</kw>
+<kw name="E edita os dados" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>Klebinho</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:37.832" level="INFO">Typing text 'Klebinho' into text field '//*[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:37.831" endtime="20220131 10:00:38.328"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>Junior</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:38.333" level="INFO">Typing text 'Junior' into text field '//*[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:38.330" endtime="20220131 10:00:38.825"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>fuialiejavolto@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:38.828" level="INFO">Typing text 'fuialiejavolto@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:38.826" endtime="20220131 10:00:39.456"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:39.458" level="INFO">Typing text '50' into text field '//*[@id="age"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:39.457" endtime="20220131 10:00:39.833"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>10000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:39.835" level="INFO">Typing text '10000' into text field '//*[@id="salary"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:39.833" endtime="20220131 10:00:40.330"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${department}</arg>
+<arg>Administration</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:40.331" level="INFO">Typing text 'Administration' into text field '//*[@id="department"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:40.330" endtime="20220131 10:00:40.811"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:37.829" endtime="20220131 10:00:40.811"/>
+</kw>
+<kw name="Então clica no botão submit" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:40.816" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:40.815" endtime="20220131 10:00:41.016"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${imagemQA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:00:41.016" endtime="20220131 10:00:41.134"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:40.813" endtime="20220131 10:00:41.136"/>
+</kw>
+<kw name="E verifica se consta o novo nome cadastrado" library="resource">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>Klebinho</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:00:41.249" level="INFO">Current page contains text 'Klebinho'.</msg>
+<status status="PASS" starttime="20220131 10:00:41.141" endtime="20220131 10:00:41.250"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:41.138" endtime="20220131 10:00:41.250"/>
+</kw>
+<kw name="E fecha o navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 10:00:41.257" endtime="20220131 10:00:44.318"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:41.256" endtime="20220131 10:00:44.318"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:27.300" endtime="20220131 10:00:44.319"/>
+</test>
+<test id="s1-t3" name="Cenário 03: Cadastrar usuário sem preencher o primeiro nome">
+<kw name="Dado que usuário abre o site" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 10:00:44.329" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/webtables'.</msg>
+<status status="PASS" starttime="20220131 10:00:44.328" endtime="20220131 10:00:53.467"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220131 10:00:53.484" level="INFO">Page title is 'ToolsQA'.</msg>
+<status status="PASS" starttime="20220131 10:00:53.467" endtime="20220131 10:00:53.484"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:44.327" endtime="20220131 10:00:53.485"/>
+</kw>
+<kw name="E maximiza a tela" library="resource">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 10:00:53.489" endtime="20220131 10:00:53.809"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:53.487" endtime="20220131 10:00:53.810"/>
+</kw>
+<kw name="Quando clica no botão Add" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:53.815" level="INFO">Clicking element 'addNewRecordButton'.</msg>
+<status status="PASS" starttime="20220131 10:00:53.813" endtime="20220131 10:00:54.654"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:53.812" endtime="20220131 10:00:54.656"/>
+</kw>
+<kw name="E preenche os outros campos sem preencher o first name" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>Junior</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:54.662" level="INFO">Typing text 'Junior' into text field '//*[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:54.661" endtime="20220131 10:00:55.186"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>fuialiejavolto@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:55.188" level="INFO">Typing text 'fuialiejavolto@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:55.187" endtime="20220131 10:00:55.862"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:55.864" level="INFO">Typing text '50' into text field '//*[@id="age"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:55.862" endtime="20220131 10:00:56.155"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>10000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:56.158" level="INFO">Typing text '10000' into text field '//*[@id="salary"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:56.156" endtime="20220131 10:00:56.522"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${department}</arg>
+<arg>Administration</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:56.525" level="INFO">Typing text 'Administration' into text field '//*[@id="department"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:56.524" endtime="20220131 10:00:56.949"/>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220131 10:00:57.123" level="INFO">Text field '//*[@id="firstName"]' contains text ''.</msg>
+<status status="PASS" starttime="20220131 10:00:56.951" endtime="20220131 10:00:57.123"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${RF}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:00:57.165" level="INFO">Current page contains text 'Registration Form'.</msg>
+<status status="PASS" starttime="20220131 10:00:57.124" endtime="20220131 10:00:57.165"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:54.659" endtime="20220131 10:00:57.166"/>
+</kw>
+<kw name="Então clica no botão submit" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:00:57.170" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20220131 10:00:57.168" endtime="20220131 10:00:57.330"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${imagemQA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:00:57.330" endtime="20220131 10:00:57.425"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:57.167" endtime="20220131 10:00:57.425"/>
+</kw>
+<kw name="E fecha o navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 10:00:57.433" endtime="20220131 10:01:00.412"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:57.431" endtime="20220131 10:01:00.412"/>
+</kw>
+<status status="PASS" starttime="20220131 10:00:44.324" endtime="20220131 10:01:00.414"/>
+</test>
+<test id="s1-t4" name="Cenário 04: Cadastrar usuário sem preencher o sobrenome">
+<kw name="Dado que usuário abre o site" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 10:01:00.425" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/webtables'.</msg>
+<status status="PASS" starttime="20220131 10:01:00.424" endtime="20220131 10:01:10.347"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220131 10:01:10.366" level="INFO">Page title is 'ToolsQA'.</msg>
+<status status="PASS" starttime="20220131 10:01:10.348" endtime="20220131 10:01:10.366"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:00.422" endtime="20220131 10:01:10.368"/>
+</kw>
+<kw name="E maximiza a tela" library="resource">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 10:01:10.371" endtime="20220131 10:01:10.675"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:10.370" endtime="20220131 10:01:10.676"/>
+</kw>
+<kw name="Quando clica no botão Add" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:10.692" level="INFO">Clicking element 'addNewRecordButton'.</msg>
+<status status="PASS" starttime="20220131 10:01:10.691" endtime="20220131 10:01:11.490"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:10.687" endtime="20220131 10:01:11.493"/>
+</kw>
+<kw name="E preenche os outros campos sem preencher o sobrenome" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>Jaime</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:11.498" level="INFO">Typing text 'Jaime' into text field '//*[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:11.496" endtime="20220131 10:01:12.094"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>fuialiejavolto@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:12.095" level="INFO">Typing text 'fuialiejavolto@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:12.094" endtime="20220131 10:01:12.745"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>50</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:12.749" level="INFO">Typing text '50' into text field '//*[@id="age"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:12.746" endtime="20220131 10:01:13.111"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>10000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:13.114" level="INFO">Typing text '10000' into text field '//*[@id="salary"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:13.112" endtime="20220131 10:01:13.454"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${department}</arg>
+<arg>Administration</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:13.456" level="INFO">Typing text 'Administration' into text field '//*[@id="department"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:13.454" endtime="20220131 10:01:13.879"/>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220131 10:01:14.002" level="INFO">Text field '//*[@id="lastName"]' contains text ''.</msg>
+<status status="PASS" starttime="20220131 10:01:13.879" endtime="20220131 10:01:14.002"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${RF}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:01:14.048" level="INFO">Current page contains text 'Registration Form'.</msg>
+<status status="PASS" starttime="20220131 10:01:14.003" endtime="20220131 10:01:14.048"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:11.495" endtime="20220131 10:01:14.049"/>
+</kw>
+<kw name="Então clica no botão submit" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:14.054" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:14.052" endtime="20220131 10:01:14.246"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${imagemQA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:01:14.247" endtime="20220131 10:01:14.369"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:14.051" endtime="20220131 10:01:14.373"/>
+</kw>
+<kw name="E fecha o navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 10:01:14.379" endtime="20220131 10:01:17.442"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:14.377" endtime="20220131 10:01:17.443"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:00.419" endtime="20220131 10:01:17.444"/>
+</test>
+<test id="s1-t5" name="Cenário 05: Cadastrar usuário sem preencher o email">
+<kw name="Dado que usuário abre o site" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 10:01:17.455" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/webtables'.</msg>
+<status status="PASS" starttime="20220131 10:01:17.454" endtime="20220131 10:01:26.786"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220131 10:01:26.809" level="INFO">Page title is 'ToolsQA'.</msg>
+<status status="PASS" starttime="20220131 10:01:26.787" endtime="20220131 10:01:26.809"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:17.453" endtime="20220131 10:01:26.810"/>
+</kw>
+<kw name="E maximiza a tela" library="resource">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 10:01:26.814" endtime="20220131 10:01:27.162"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:26.812" endtime="20220131 10:01:27.162"/>
+</kw>
+<kw name="Quando clica no botão Add" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:27.167" level="INFO">Clicking element 'addNewRecordButton'.</msg>
+<status status="PASS" starttime="20220131 10:01:27.166" endtime="20220131 10:01:27.980"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:27.165" endtime="20220131 10:01:27.981"/>
+</kw>
+<kw name="E preenche os outros campos sem preencher o email" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>Jaime</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:27.990" level="INFO">Typing text 'Jaime' into text field '//*[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:27.988" endtime="20220131 10:01:28.525"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>Junior</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:28.527" level="INFO">Typing text 'Junior' into text field '//*[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:28.526" endtime="20220131 10:01:29.022"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>80</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:29.024" level="INFO">Typing text '80' into text field '//*[@id="age"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:29.023" endtime="20220131 10:01:29.376"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>12000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:29.378" level="INFO">Typing text '12000' into text field '//*[@id="salary"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:29.377" endtime="20220131 10:01:29.747"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${department}</arg>
+<arg>TI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:29.749" level="INFO">Typing text 'TI' into text field '//*[@id="department"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:29.747" endtime="20220131 10:01:30.152"/>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220131 10:01:30.285" level="INFO">Text field '//*[@id="userEmail"]' contains text ''.</msg>
+<status status="PASS" starttime="20220131 10:01:30.153" endtime="20220131 10:01:30.285"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${RF}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:01:30.334" level="INFO">Current page contains text 'Registration Form'.</msg>
+<status status="PASS" starttime="20220131 10:01:30.285" endtime="20220131 10:01:30.334"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:27.984" endtime="20220131 10:01:30.335"/>
+</kw>
+<kw name="Então clica no botão submit" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:30.339" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:30.338" endtime="20220131 10:01:30.500"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${imagemQA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:01:30.500" endtime="20220131 10:01:30.614"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:30.336" endtime="20220131 10:01:30.615"/>
+</kw>
+<kw name="E fecha o navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 10:01:30.618" endtime="20220131 10:01:33.616"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:30.617" endtime="20220131 10:01:33.616"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:17.450" endtime="20220131 10:01:33.619"/>
+</test>
+<test id="s1-t6" name="Cenário 06: Cadastrar usuário sem preencher a idade">
+<kw name="Dado que usuário abre o site" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 10:01:33.630" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/webtables'.</msg>
+<status status="PASS" starttime="20220131 10:01:33.629" endtime="20220131 10:01:45.350"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220131 10:01:45.366" level="INFO">Page title is 'ToolsQA'.</msg>
+<status status="PASS" starttime="20220131 10:01:45.351" endtime="20220131 10:01:45.367"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:33.627" endtime="20220131 10:01:45.367"/>
+</kw>
+<kw name="E maximiza a tela" library="resource">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 10:01:45.371" endtime="20220131 10:01:45.850"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:45.370" endtime="20220131 10:01:45.851"/>
+</kw>
+<kw name="Quando clica no botão Add" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:45.869" level="INFO">Clicking element 'addNewRecordButton'.</msg>
+<status status="PASS" starttime="20220131 10:01:45.867" endtime="20220131 10:01:46.718"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:45.865" endtime="20220131 10:01:46.719"/>
+</kw>
+<kw name="E preenche os outros campos sem preencher a idade" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>Jaime</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:46.729" level="INFO">Typing text 'Jaime' into text field '//*[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:46.727" endtime="20220131 10:01:47.465"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>Junior</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:47.467" level="INFO">Typing text 'Junior' into text field '//*[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:47.466" endtime="20220131 10:01:48.029"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>fuialiejavolto@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:48.031" level="INFO">Typing text 'fuialiejavolto@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:48.030" endtime="20220131 10:01:49.123"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>12000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:49.126" level="INFO">Typing text '12000' into text field '//*[@id="salary"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:49.124" endtime="20220131 10:01:49.783"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${department}</arg>
+<arg>TI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:49.786" level="INFO">Typing text 'TI' into text field '//*[@id="department"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:49.784" endtime="20220131 10:01:50.400"/>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220131 10:01:50.632" level="INFO">Text field '//*[@id="age"]' contains text ''.</msg>
+<status status="PASS" starttime="20220131 10:01:50.401" endtime="20220131 10:01:50.635"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${RF}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:01:50.714" level="INFO">Current page contains text 'Registration Form'.</msg>
+<status status="PASS" starttime="20220131 10:01:50.639" endtime="20220131 10:01:50.714"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:46.723" endtime="20220131 10:01:50.715"/>
+</kw>
+<kw name="Então clica no botão submit" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:01:50.721" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20220131 10:01:50.719" endtime="20220131 10:01:51.041"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${imagemQA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:01:51.045" endtime="20220131 10:01:51.176"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:50.717" endtime="20220131 10:01:51.177"/>
+</kw>
+<kw name="E fecha o navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 10:01:51.183" endtime="20220131 10:01:54.314"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:51.181" endtime="20220131 10:01:54.315"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:33.624" endtime="20220131 10:01:54.317"/>
+</test>
+<test id="s1-t7" name="Cenário 07: Cadastrar usuário preenchendo a idade com letras">
+<kw name="Dado que usuário abre o site" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 10:01:54.338" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/webtables'.</msg>
+<status status="PASS" starttime="20220131 10:01:54.336" endtime="20220131 10:02:04.736"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220131 10:02:04.771" level="INFO">Page title is 'ToolsQA'.</msg>
+<status status="PASS" starttime="20220131 10:02:04.737" endtime="20220131 10:02:04.771"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:54.333" endtime="20220131 10:02:04.772"/>
+</kw>
+<kw name="E maximiza a tela" library="resource">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 10:02:04.827" endtime="20220131 10:02:05.193"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:04.826" endtime="20220131 10:02:05.196"/>
+</kw>
+<kw name="Quando clica no botão Add" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:05.211" level="INFO">Clicking element 'addNewRecordButton'.</msg>
+<status status="PASS" starttime="20220131 10:02:05.206" endtime="20220131 10:02:06.128"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:05.200" endtime="20220131 10:02:06.129"/>
+</kw>
+<kw name="E preenche o campo idade com letras" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>Jaime</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:06.139" level="INFO">Typing text 'Jaime' into text field '//*[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:06.134" endtime="20220131 10:02:06.813"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>Junior</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:06.816" level="INFO">Typing text 'Junior' into text field '//*[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:06.814" endtime="20220131 10:02:07.411"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>fuialiejavolto@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:07.414" level="INFO">Typing text 'fuialiejavolto@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:07.412" endtime="20220131 10:02:08.330"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>AB</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:08.332" level="INFO">Typing text 'AB' into text field '//*[@id="age"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:08.331" endtime="20220131 10:02:08.861"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>12000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:08.864" level="INFO">Typing text '12000' into text field '//*[@id="salary"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:08.862" endtime="20220131 10:02:09.312"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${department}</arg>
+<arg>TI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:09.316" level="INFO">Typing text 'TI' into text field '//*[@id="department"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:09.313" endtime="20220131 10:02:09.849"/>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>AB</arg>
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220131 10:02:10.053" level="INFO">Text field '//*[@id="age"]' contains text 'AB'.</msg>
+<status status="PASS" starttime="20220131 10:02:09.850" endtime="20220131 10:02:10.054"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${RF}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:02:10.112" level="INFO">Current page contains text 'Registration Form'.</msg>
+<status status="PASS" starttime="20220131 10:02:10.055" endtime="20220131 10:02:10.113"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:06.132" endtime="20220131 10:02:10.114"/>
+</kw>
+<kw name="Então clica no botão submit" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:10.119" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:10.118" endtime="20220131 10:02:10.452"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${imagemQA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:02:10.453" endtime="20220131 10:02:10.621"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:10.116" endtime="20220131 10:02:10.622"/>
+</kw>
+<kw name="E fecha o navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 10:02:10.627" endtime="20220131 10:02:13.776"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:10.624" endtime="20220131 10:02:13.777"/>
+</kw>
+<status status="PASS" starttime="20220131 10:01:54.329" endtime="20220131 10:02:13.779"/>
+</test>
+<test id="s1-t8" name="Cenário 08: Cadastrar usuário sem preencher o salário">
+<kw name="Dado que usuário abre o site" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 10:02:13.795" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/webtables'.</msg>
+<status status="PASS" starttime="20220131 10:02:13.793" endtime="20220131 10:02:25.371"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220131 10:02:25.388" level="INFO">Page title is 'ToolsQA'.</msg>
+<status status="PASS" starttime="20220131 10:02:25.372" endtime="20220131 10:02:25.389"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:13.791" endtime="20220131 10:02:25.389"/>
+</kw>
+<kw name="E maximiza a tela" library="resource">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 10:02:25.392" endtime="20220131 10:02:25.875"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:25.391" endtime="20220131 10:02:25.876"/>
+</kw>
+<kw name="Quando clica no botão Add" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:25.899" level="INFO">Clicking element 'addNewRecordButton'.</msg>
+<status status="PASS" starttime="20220131 10:02:25.898" endtime="20220131 10:02:26.906"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:25.896" endtime="20220131 10:02:26.908"/>
+</kw>
+<kw name="E preenche os outros campos sem preencher o salário" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>Jaime</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:26.914" level="INFO">Typing text 'Jaime' into text field '//*[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:26.912" endtime="20220131 10:02:27.584"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>Junior</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:27.587" level="INFO">Typing text 'Junior' into text field '//*[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:27.586" endtime="20220131 10:02:28.108"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>fuialiejavolto@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:28.110" level="INFO">Typing text 'fuialiejavolto@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:28.108" endtime="20220131 10:02:29.015"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>80</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:29.018" level="INFO">Typing text '80' into text field '//*[@id="age"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:29.015" endtime="20220131 10:02:29.462"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${department}</arg>
+<arg>TI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:29.464" level="INFO">Typing text 'TI' into text field '//*[@id="department"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:29.462" endtime="20220131 10:02:29.983"/>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220131 10:02:30.275" level="INFO">Text field '//*[@id="salary"]' contains text ''.</msg>
+<status status="PASS" starttime="20220131 10:02:29.984" endtime="20220131 10:02:30.276"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${RF}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:02:30.339" level="INFO">Current page contains text 'Registration Form'.</msg>
+<status status="PASS" starttime="20220131 10:02:30.276" endtime="20220131 10:02:30.339"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:26.910" endtime="20220131 10:02:30.341"/>
+</kw>
+<kw name="Então clica no botão submit" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:30.347" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:30.345" endtime="20220131 10:02:30.699"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${imagemQA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:02:30.699" endtime="20220131 10:02:30.838"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:30.343" endtime="20220131 10:02:30.839"/>
+</kw>
+<kw name="E fecha o navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 10:02:30.844" endtime="20220131 10:02:34.002"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:30.842" endtime="20220131 10:02:34.003"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:13.787" endtime="20220131 10:02:34.005"/>
+</test>
+<test id="s1-t9" name="Cenário 09: Cadastrar usuário preenchendo salário com letras">
+<kw name="Dado que usuário abre o site" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 10:02:34.023" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/webtables'.</msg>
+<status status="PASS" starttime="20220131 10:02:34.020" endtime="20220131 10:02:53.639"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220131 10:02:53.659" level="INFO">Page title is 'ToolsQA'.</msg>
+<status status="PASS" starttime="20220131 10:02:53.641" endtime="20220131 10:02:53.660"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:34.017" endtime="20220131 10:02:53.661"/>
+</kw>
+<kw name="E maximiza a tela" library="resource">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 10:02:53.664" endtime="20220131 10:02:53.974"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:53.663" endtime="20220131 10:02:53.974"/>
+</kw>
+<kw name="Quando clica no botão Add" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:53.979" level="INFO">Clicking element 'addNewRecordButton'.</msg>
+<status status="PASS" starttime="20220131 10:02:53.978" endtime="20220131 10:02:54.637"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:53.977" endtime="20220131 10:02:54.638"/>
+</kw>
+<kw name="E preenche o campo salário com letras" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>Jaime</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:54.643" level="INFO">Typing text 'Jaime' into text field '//*[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:54.641" endtime="20220131 10:02:55.183"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>Junior</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:55.185" level="INFO">Typing text 'Junior' into text field '//*[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:55.184" endtime="20220131 10:02:55.687"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>fuialiejavolto@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:55.689" level="INFO">Typing text 'fuialiejavolto@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:55.688" endtime="20220131 10:02:56.264"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>80</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:56.270" level="INFO">Typing text '80' into text field '//*[@id="age"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:56.266" endtime="20220131 10:02:56.590"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>AB</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:56.594" level="INFO">Typing text 'AB' into text field '//*[@id="salary"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:56.591" endtime="20220131 10:02:56.900"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${department}</arg>
+<arg>TI</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:56.903" level="INFO">Typing text 'TI' into text field '//*[@id="department"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:56.901" endtime="20220131 10:02:57.200"/>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>AB</arg>
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220131 10:02:57.340" level="INFO">Text field '//*[@id="salary"]' contains text 'AB'.</msg>
+<status status="PASS" starttime="20220131 10:02:57.200" endtime="20220131 10:02:57.340"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${RF}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:02:57.379" level="INFO">Current page contains text 'Registration Form'.</msg>
+<status status="PASS" starttime="20220131 10:02:57.341" endtime="20220131 10:02:57.379"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:54.639" endtime="20220131 10:02:57.380"/>
+</kw>
+<kw name="Então clica no botão submit" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:02:57.384" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20220131 10:02:57.383" endtime="20220131 10:02:57.558"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${imagemQA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:02:57.559" endtime="20220131 10:02:57.653"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:57.381" endtime="20220131 10:02:57.654"/>
+</kw>
+<kw name="E fecha o navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 10:02:57.661" endtime="20220131 10:03:00.651"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:57.658" endtime="20220131 10:03:00.651"/>
+</kw>
+<status status="PASS" starttime="20220131 10:02:34.013" endtime="20220131 10:03:00.654"/>
+</test>
+<test id="s1-t10" name="Cenário 10: Cadastrar usuário sem preencher o department">
+<kw name="Dado que usuário abre o site" library="resource" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220131 10:03:00.665" level="INFO">Opening browser 'chrome' to base url 'https://demoqa.com/webtables'.</msg>
+<status status="PASS" starttime="20220131 10:03:00.663" endtime="20220131 10:03:17.532"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>ToolsQA</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220131 10:03:17.553" level="INFO">Page title is 'ToolsQA'.</msg>
+<status status="PASS" starttime="20220131 10:03:17.533" endtime="20220131 10:03:17.555"/>
+</kw>
+<status status="PASS" starttime="20220131 10:03:00.661" endtime="20220131 10:03:17.555"/>
+</kw>
+<kw name="E maximiza a tela" library="resource">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220131 10:03:17.559" endtime="20220131 10:03:17.889"/>
+</kw>
+<status status="PASS" starttime="20220131 10:03:17.557" endtime="20220131 10:03:17.889"/>
+</kw>
+<kw name="Quando clica no botão Add" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_add}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:03:17.894" level="INFO">Clicking element 'addNewRecordButton'.</msg>
+<status status="PASS" starttime="20220131 10:03:17.892" endtime="20220131 10:03:18.546"/>
+</kw>
+<status status="PASS" starttime="20220131 10:03:17.891" endtime="20220131 10:03:18.547"/>
+</kw>
+<kw name="E preenche os outros campos sem preencher o department" library="resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${first_name}</arg>
+<arg>Jaime</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:03:18.553" level="INFO">Typing text 'Jaime' into text field '//*[@id="firstName"]'.</msg>
+<status status="PASS" starttime="20220131 10:03:18.551" endtime="20220131 10:03:19.144"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${last_name}</arg>
+<arg>Junior</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:03:19.147" level="INFO">Typing text 'Junior' into text field '//*[@id="lastName"]'.</msg>
+<status status="PASS" starttime="20220131 10:03:19.144" endtime="20220131 10:03:19.632"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>fuialiejavolto@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:03:19.638" level="INFO">Typing text 'fuialiejavolto@gmail.com' into text field '//*[@id="userEmail"]'.</msg>
+<status status="PASS" starttime="20220131 10:03:19.633" endtime="20220131 10:03:20.233"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${age}</arg>
+<arg>80</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:03:20.235" level="INFO">Typing text '80' into text field '//*[@id="age"]'.</msg>
+<status status="PASS" starttime="20220131 10:03:20.234" endtime="20220131 10:03:20.522"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${salary}</arg>
+<arg>12000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220131 10:03:20.524" level="INFO">Typing text '12000' into text field '//*[@id="salary"]'.</msg>
+<status status="PASS" starttime="20220131 10:03:20.522" endtime="20220131 10:03:20.946"/>
+</kw>
+<kw name="Textfield Should Contain" library="SeleniumLibrary">
+<arg>${department}</arg>
+<arg>${EMPTY}</arg>
+<doc>Verifies text field ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220131 10:03:21.133" level="INFO">Text field '//*[@id="department"]' contains text ''.</msg>
+<status status="PASS" starttime="20220131 10:03:20.946" endtime="20220131 10:03:21.134"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${RF}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20220131 10:03:21.201" level="INFO">Current page contains text 'Registration Form'.</msg>
+<status status="PASS" starttime="20220131 10:03:21.134" endtime="20220131 10:03:21.202"/>
+</kw>
+<status status="PASS" starttime="20220131 10:03:18.549" endtime="20220131 10:03:21.203"/>
+</kw>
+<kw name="Então clica no botão submit" library="resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${botao_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220131 10:03:21.208" level="INFO">Clicking element '//*[@id="submit"]'.</msg>
+<status status="PASS" starttime="20220131 10:03:21.206" endtime="20220131 10:03:21.463"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${imagemQA}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220131 10:03:21.464" endtime="20220131 10:03:21.597"/>
+</kw>
+<status status="PASS" starttime="20220131 10:03:21.204" endtime="20220131 10:03:21.598"/>
+</kw>
+<kw name="E fecha o navegador" library="resource" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220131 10:03:21.604" endtime="20220131 10:03:25.081"/>
+</kw>
+<status status="PASS" starttime="20220131 10:03:21.602" endtime="20220131 10:03:25.082"/>
+</kw>
+<status status="PASS" starttime="20220131 10:03:00.659" endtime="20220131 10:03:25.085"/>
+</test>
+<status status="PASS" starttime="20220131 10:00:05.729" endtime="20220131 10:03:25.101"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="10" fail="0" skip="0" id="s1" name="Suite">Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
